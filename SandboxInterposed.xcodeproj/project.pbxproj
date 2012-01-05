@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564A9B1314B3DBC900790559 /* __mac_syscall_interposer.c in Sources */ = {isa = PBXBuildFile; fileRef = 564A9B1114B3DBC000790559 /* __mac_syscall_interposer.c */; };
+		564A9B1B14B3DD2500790559 /* lib__mac_syscall_interposer.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5602F19214B3DA7F00EA69F8 /* lib__mac_syscall_interposer.dylib */; };
+		56C28AB114B3D6FE00F2EB1A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C28AB014B3D6FE00F2EB1A /* Cocoa.framework */; };
+		56C28ABB14B3D6FE00F2EB1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56C28AB914B3D6FE00F2EB1A /* InfoPlist.strings */; };
+		56C28ABD14B3D6FE00F2EB1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C28ABC14B3D6FE00F2EB1A /* main.m */; };
+		56C28AC114B3D6FE00F2EB1A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 56C28ABF14B3D6FE00F2EB1A /* Credits.rtf */; };
+		56C28ACF14B3D74000F2EB1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C28ACE14B3D74000F2EB1A /* AppDelegate.m */; };
+		56C28AD114B3D76A00F2EB1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C28AD014B3D76A00F2EB1A /* MainMenu.xib */; };
+		56C28AD314B3D77D00F2EB1A /* DeliverySuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C28AD214B3D77D00F2EB1A /* DeliverySuccess.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		564A9B1A14B3DD1600790559 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				564A9B1B14B3DD2500790559 /* lib__mac_syscall_interposer.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5602F19214B3DA7F00EA69F8 /* lib__mac_syscall_interposer.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = lib__mac_syscall_interposer.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		564A9B1114B3DBC000790559 /* __mac_syscall_interposer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = __mac_syscall_interposer.c; path = MAC_Syscall_Interposer/__mac_syscall_interposer.c; sourceTree = "<group>"; };
+		56C28AAC14B3D6FE00F2EB1A /* SandboxInterposed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxInterposed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C28AB014B3D6FE00F2EB1A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		56C28AB314B3D6FE00F2EB1A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		56C28AB414B3D6FE00F2EB1A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		56C28AB514B3D6FE00F2EB1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56C28AB814B3D6FE00F2EB1A /* SandboxInterposed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SandboxInterposed-Info.plist"; sourceTree = "<group>"; };
+		56C28ABA14B3D6FE00F2EB1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56C28ABC14B3D6FE00F2EB1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56C28ABE14B3D6FE00F2EB1A /* SandboxInterposed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SandboxInterposed-Prefix.pch"; sourceTree = "<group>"; };
+		56C28AC014B3D6FE00F2EB1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		56C28ACD14B3D74000F2EB1A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56C28ACE14B3D74000F2EB1A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56C28AD014B3D76A00F2EB1A /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		56C28AD214B3D77D00F2EB1A /* DeliverySuccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeliverySuccess.png; sourceTree = "<group>"; };
+		56C28AD414B3D7B500F2EB1A /* SandboxInterposed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SandboxInterposed.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5602F18F14B3DA7F00EA69F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C28AA914B3D6FE00F2EB1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C28AB114B3D6FE00F2EB1A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		564A9B0E14B3DB6700790559 /* MAC_Syscall_Interposer */ = {
+			isa = PBXGroup;
+			children = (
+				564A9B1114B3DBC000790559 /* __mac_syscall_interposer.c */,
+			);
+			name = MAC_Syscall_Interposer;
+			sourceTree = "<group>";
+		};
+		56C28AA114B3D6FE00F2EB1A = {
+			isa = PBXGroup;
+			children = (
+				564A9B0E14B3DB6700790559 /* MAC_Syscall_Interposer */,
+				56C28AB614B3D6FE00F2EB1A /* SandboxInterposed */,
+				56C28AAF14B3D6FE00F2EB1A /* Frameworks */,
+				56C28AAD14B3D6FE00F2EB1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56C28AAD14B3D6FE00F2EB1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56C28AAC14B3D6FE00F2EB1A /* SandboxInterposed.app */,
+				5602F19214B3DA7F00EA69F8 /* lib__mac_syscall_interposer.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56C28AAF14B3D6FE00F2EB1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C28AB014B3D6FE00F2EB1A /* Cocoa.framework */,
+				56C28AB214B3D6FE00F2EB1A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56C28AB214B3D6FE00F2EB1A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C28AB314B3D6FE00F2EB1A /* AppKit.framework */,
+				56C28AB414B3D6FE00F2EB1A /* CoreData.framework */,
+				56C28AB514B3D6FE00F2EB1A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		56C28AB614B3D6FE00F2EB1A /* SandboxInterposed */ = {
+			isa = PBXGroup;
+			children = (
+				56C28AD414B3D7B500F2EB1A /* SandboxInterposed.entitlements */,
+				56C28AD214B3D77D00F2EB1A /* DeliverySuccess.png */,
+				56C28AD014B3D76A00F2EB1A /* MainMenu.xib */,
+				56C28ACD14B3D74000F2EB1A /* AppDelegate.h */,
+				56C28ACE14B3D74000F2EB1A /* AppDelegate.m */,
+				56C28AB714B3D6FE00F2EB1A /* Supporting Files */,
+			);
+			path = SandboxInterposed;
+			sourceTree = "<group>";
+		};
+		56C28AB714B3D6FE00F2EB1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56C28AB814B3D6FE00F2EB1A /* SandboxInterposed-Info.plist */,
+				56C28AB914B3D6FE00F2EB1A /* InfoPlist.strings */,
+				56C28ABC14B3D6FE00F2EB1A /* main.m */,
+				56C28ABE14B3D6FE00F2EB1A /* SandboxInterposed-Prefix.pch */,
+				56C28ABF14B3D6FE00F2EB1A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5602F19014B3DA7F00EA69F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5602F19114B3DA7F00EA69F8 /* __mac_syscall_interposer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5602F19514B3DA7F00EA69F8 /* Build configuration list for PBXNativeTarget "__mac_syscall_interposer" */;
+			buildPhases = (
+				5602F18E14B3DA7F00EA69F8 /* Sources */,
+				5602F18F14B3DA7F00EA69F8 /* Frameworks */,
+				5602F19014B3DA7F00EA69F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = __mac_syscall_interposer;
+			productName = __mac_syscall_interposer;
+			productReference = 5602F19214B3DA7F00EA69F8 /* lib__mac_syscall_interposer.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		56C28AAB14B3D6FE00F2EB1A /* SandboxInterposed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C28ACA14B3D6FF00F2EB1A /* Build configuration list for PBXNativeTarget "SandboxInterposed" */;
+			buildPhases = (
+				56C28AA814B3D6FE00F2EB1A /* Sources */,
+				56C28AA914B3D6FE00F2EB1A /* Frameworks */,
+				56C28AAA14B3D6FE00F2EB1A /* Resources */,
+				564A9B1A14B3DD1600790559 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxInterposed;
+			productName = SandboxInterposed;
+			productReference = 56C28AAC14B3D6FE00F2EB1A /* SandboxInterposed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56C28AA314B3D6FE00F2EB1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Axelexic Inc.";
+			};
+			buildConfigurationList = 56C28AA614B3D6FE00F2EB1A /* Build configuration list for PBXProject "SandboxInterposed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 56C28AA114B3D6FE00F2EB1A;
+			productRefGroup = 56C28AAD14B3D6FE00F2EB1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C28AAB14B3D6FE00F2EB1A /* SandboxInterposed */,
+				5602F19114B3DA7F00EA69F8 /* __mac_syscall_interposer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56C28AAA14B3D6FE00F2EB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C28ABB14B3D6FE00F2EB1A /* InfoPlist.strings in Resources */,
+				56C28AC114B3D6FE00F2EB1A /* Credits.rtf in Resources */,
+				56C28AD114B3D76A00F2EB1A /* MainMenu.xib in Resources */,
+				56C28AD314B3D77D00F2EB1A /* DeliverySuccess.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5602F18E14B3DA7F00EA69F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564A9B1314B3DBC900790559 /* __mac_syscall_interposer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C28AA814B3D6FE00F2EB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C28ABD14B3D6FE00F2EB1A /* main.m in Sources */,
+				56C28ACF14B3D74000F2EB1A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56C28AB914B3D6FE00F2EB1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C28ABA14B3D6FE00F2EB1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56C28ABF14B3D6FE00F2EB1A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C28AC014B3D6FE00F2EB1A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5602F19314B3DA7F00EA69F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5602F19414B3DA7F00EA69F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56C28AC814B3D6FF00F2EB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		56C28AC914B3D6FF00F2EB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		56C28ACB14B3D6FF00F2EB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SandboxInterposed/SandboxInterposed.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Yogesh Swami (6R586W8423)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SandboxInterposed/SandboxInterposed-Prefix.pch";
+				INFOPLIST_FILE = "SandboxInterposed/SandboxInterposed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92FD7D93-47E5-4A54-A9D4-4A9FE6B316FD";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		56C28ACC14B3D6FF00F2EB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SandboxInterposed/SandboxInterposed.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Yogesh Swami (6R586W8423)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SandboxInterposed/SandboxInterposed-Prefix.pch";
+				INFOPLIST_FILE = "SandboxInterposed/SandboxInterposed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92FD7D93-47E5-4A54-A9D4-4A9FE6B316FD";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5602F19514B3DA7F00EA69F8 /* Build configuration list for PBXNativeTarget "__mac_syscall_interposer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5602F19314B3DA7F00EA69F8 /* Debug */,
+				5602F19414B3DA7F00EA69F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C28AA614B3D6FE00F2EB1A /* Build configuration list for PBXProject "SandboxInterposed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C28AC814B3D6FF00F2EB1A /* Debug */,
+				56C28AC914B3D6FF00F2EB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C28ACA14B3D6FF00F2EB1A /* Build configuration list for PBXNativeTarget "SandboxInterposed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C28ACB14B3D6FF00F2EB1A /* Debug */,
+				56C28ACC14B3D6FF00F2EB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56C28AA314B3D6FE00F2EB1A /* Project object */;
+}

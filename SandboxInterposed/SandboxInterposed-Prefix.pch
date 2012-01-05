@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SandboxInterposed' target in the 'SandboxInterposed' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
