@@ -1,0 +1,8 @@
+Bypassing App Sandbox using LD_PRELOAD
+--------------------------------------
+
+The heart of App Sanboxing (which interfaces with the mandatory access control, and Sandbox.kext/Quarantime.kext) is the __mac_syscall system call. An application/framework wanting to sandbox itself, invokes this system call, with a compiled Lisp policy, to inform Sandbox.kext and Qauarentine.kext about the privileges of the application. Even for code-signed applications with embedded entitlements, the kernel DOES NOT enforce sandboxing at the time of execve/__mac_execve system call. In fact, the way the sandboxing is architected, the kernel cannot enforce the policy at the time of execve/__mac_execve, because dyld needs access to system libraries, but dyld runs in userspace, so enforcing at the time of __mac_execve would be premature.
+
+Therefore, sandboxing is enforced after exec has handed over control to dyld in the user space and all the shared libraries has been mapped. Only after this, some framework calls __mac_syscall to enforce sandboxing. This means, that if a user has DYLD_INSERT_LIBRARIES in her environment, she can intercept any system call, including __mac_syscall() and return success for this system call without actually informing the kernel about sandbox enforcement.
+
+The attached sample code tries to do exactly this. The app is a pure computation app, and tries to open a file in user's home directly using open system. Without the __mac_syscall() interception, the sandbox clearly denies IO access to the file, however, when the system call is intercepted, the user can open and read the files. (For a live demo please see the youtube video at http://www.youtube.com/watch?v=KYGhay3yapk&context=C3e38e54ADOEgsToPDskKa49DdVMOap8v5Kjp3ULti )
